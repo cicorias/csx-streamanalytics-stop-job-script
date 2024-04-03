@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Script Debug",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "dotnet",
+            "osx": {
+                "program": "/usr/local/share/dotnet/dotnet",
+                "args": [
+                    "exec",
+                    "${env:HOME}/.nuget/packages/dotnet-script/1.5.0/tools/net8.0/any/dotnet-script.dll",
+                    "${file}"
+                ]
+            },
+            "args": [
+                "exec",
+                "${env:HOME}/.nuget/packages/dotnet-script/1.5.0/tools/net8.0/any/dotnet-script.dll",
+                "${file}"
+            ],
+            "cwd": "${workspaceRoot}",
+            "stopAtEntry": false
+        }
+    ]
+}
